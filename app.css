@@ -12,8 +12,8 @@ body {
   margin: 50vh;
 }
 
-
-a {
+/* <----- Landing Page Animation CSS -----> */
+.nameAnimation {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,5 +24,148 @@ a {
   line-height: 50px;
   font-family: 'Inconsolata', monospace;
   text-decoration: none;
-
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+/* <----- Landing Page Animation CSS -----> */
+
+
+/* <------- Main Container Style ------> */
+
+.main-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0px 450px
+}
+
+.about-section {
+  display: block;
+  width: 500px;
+  min-height: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  /* justify-content: flex-start;
+  -ms-flex-align: baseline; */
+  align-items: baseline;
+  text-align: center;
+}
+
+.about-divblock {
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  -webkit-transition: opacity 200ms ease;
+  /* animation-name: slidein;
+  animation-duration: 2s; */
+}
+
+/* @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+} */
+
+h1 {
+  font-style: bold;
+  text-decoration: underline;
+}
+
+p {
+  font-style: italic;
+  font-size: 11pt;
+}
+/* <------- Main Container Style ------> */
+
+
+/* <----- Eaze Calendar Styling -----> */
+
+#project-container {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.project-section {
+  display: block;
+  width: 500px;
+  min-height: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  /* justify-content: flex-start;
+  -ms-flex-align: baseline; */
+  align-items: baseline;
+  text-align: center;
+}
+
+.project-divblock {
+  display: inline-block;
+  width: 274px;
+  height: 300px;
+
+  /* animation-name: bounce;
+  animation-duration: 2s; */
+}
+
+/* @keyframes bounce {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 50%;
+    width: 100%;
+  }
+} */
+
+h3 {
+  text-decoration: underline;
+}
+
+img {
+  width: 300px;
+  box-shadow: 5px 10px 10px #000000;
+}
+
+/* <----- Eaze Calendar Styling -----> */
