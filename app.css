@@ -107,6 +107,18 @@ body {
   font-size: 40pt;
   line-height: 40px;
   text-align: right;
+  animation-name: bounce2;
+  animation-duration: 3s;
+}
+
+@keyframes bounce2 {
+    from {
+      margin-right: 100%;
+    }
+
+    to {
+      margin-left: 0%
+    }
 }
 
 .about-divblock {
@@ -131,8 +143,23 @@ body {
   align-content: flex-start;
   background-color: rgba(29, 65, 42, .32);
   color: #000;
+  animation-name: slidein;
+  animation-duration: 2s;
 }
 
+/* <----- animation -----> */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%
+  }
+
+  to {
+    margin-right: 50%;
+    width: 100%;
+  }
+}
+/* <----- animation -----> */
 
 #about-me {
   text-align: left;
@@ -144,6 +171,18 @@ body {
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
+  animation-name: bounce;
+  animation-duration: 3s;
+}
+
+@keyframes bounce {
+  from {
+    margin-bottom: 150%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
 }
 
 
@@ -164,42 +203,9 @@ a {
 /* <------- Main Container Style ------> */
 
 
-/* <----- Eaze Calendar Styling -----> */
-
-#project-container {
-  display: inline-block;
-  max-width: 100%;
-}
-
-.project-section {
-  display: block;
-  width: 500px;
-  min-height: 200px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  /* justify-content: flex-start;
-  -ms-flex-align: baseline; */
-  align-items: baseline;
-  text-align: center;
-}
-
-.project-divblock {
-  display: inline-block;
-  width: 274px;
-  height: 300px;
-
-  /* animation-name: bounce;
-  animation-duration: 2s; */
-}
+/* <----- MyRequest Styling -----> */
 
 
-/* <----- Eaze Calendar Styling -----> */
+
+
+/* <----- MyRequest Styling -----> */
